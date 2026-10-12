@@ -1,0 +1,17 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# PHP runtime / uploads / temporary files
+*.log
+
+# Markdown files
+*.md
+
+# TPI (repositorio separado)
+TPI/
