@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recomendar este sitio a un amigo</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #eef2f5; margin: 40px; }
+        .form-card { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; margin-top: 5px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+        input[type="submit"] { margin-top: 20px; width: 100%; padding: 12px; background: #28a745; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; }
+        input[type="submit"]:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <div class="form-card">
+        <h2>Recomendar este Sitio a un Amigo</h2>
+        <p>Práctica N° 5 - Ejercicio 3: Ingrese sus datos y los de su conocido para compartir este enlace web.</p>
+
+        <form action="recomendar.php" method="post">
+            <fieldset style="border: none; padding: 0;">
+                <label for="tu_nombre">Tu Nombre:</label>
+                <input type="text" id="tu_nombre" name="tu_nombre" required />
+
+                <label for="tu_email">Tu Correo Electrónico:</label>
+                <input type="email" id="tu_email" name="tu_email" required />
+
+                <label for="amigo_nombre">Nombre de tu amigo/a:</label>
+                <input type="text" id="amigo_nombre" name="amigo_nombre" required />
+
+                <label for="amigo_email">Correo de tu amigo/a:</label>
+                <input type="email" id="amigo_email" name="amigo_email" required />
+
+                <label for="mensaje">Mensaje opcional:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¡Mirá este sitio web, te puede interesar!"></textarea>
+
+                <input type="submit" value="Enviar Recomendación" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
