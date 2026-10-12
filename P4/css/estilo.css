@@ -1,0 +1,59 @@
+/* Hoja de estilo personalizada para Práctica Bootstrap */
+.contenedor {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box-demo {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.box-col {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Mockup Layout Classes */
+.sidebar-box {
+    background-color: #e9ecef;
+    border-right: 2px solid #dee2e6;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.green-box {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.purple-box {
+    background-color: #6f42c1;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.lightblue-box {
+    background-color: #17a2b8;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
