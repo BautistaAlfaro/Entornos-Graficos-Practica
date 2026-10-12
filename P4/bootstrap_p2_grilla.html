@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Práctica 2: Sistema de Grillas - UTN FRRO</title>
+    <!-- Bootstrap CSS v4.3.1 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="bg-primary text-white p-3 mb-4">
+        <div class="container">
+            <h1>Entornos Gráficos - Práctica 2: Grillas</h1>
+            <p class="mb-0">Comportamiento responsive por breakpoints en Bootstrap 4</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Ejercicio 1: Sistema de Grillas -->
+        <section class="mb-5">
+            <h2 class="h4 mb-3 border-bottom pb-2">Ejercicio 1: Grilla Adaptativa</h2>
+            <p class="text-muted">
+                Para resoluciones mayores a <code>sm</code>: Fila 1 ocupa 100%, Fila 2 contiene 2 columnas de 50%.<br>
+                Para <code>sm</code> y menores: Se presentan 3 bloques de 100% de ancho.
+            </p>
+            <div class="contenedor mb-4">
+                <!-- Fila 1 -->
+                <div class="row mb-2">
+                    <div class="col-12">
+                        <div class="box-demo">Fila 1: Columna 100% (col-12)</div>
+                    </div>
+                </div>
+                <!-- Fila 2: en md son 2 columnas de 50%, en sm/xs se quiebran en 100% -->
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-2 mb-md-0">
+                        <div class="box-col">Fila 2 - Columna A (50% en &gt;sm / 100% en &lt;=sm)</div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="box-col">Fila 2 - Columna B (50% en &gt;sm / 100% en &lt;=sm)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ejercicio 2: Estructura Mockup de Sitio Web -->
+        <section class="mb-5">
+            <h2 class="h4 mb-3 border-bottom pb-2">Ejercicio 2: Mockup Estructurado</h2>
+            <div class="row">
+                <!-- Sidebar: tamaño 3 en desktop, tamaño 12 en móvil -->
+                <aside class="col-12 col-md-3 mb-4">
+                    <div class="sidebar-box h-100">
+                        <h5>Barra Lateral (Sidebar)</h5>
+                        <p class="small text-muted">Tamaño col-md-3 (o col-12 en sm)</p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="#">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#">Catálogo</a></li>
+                            <li class="nav-item"><a class="nav-link text-dark" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Área Central -->
+                <div class="col-12 col-md-9">
+                    <!-- Fila verde superior -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="green-box">
+                                <strong>Cabecera de Contenido</strong> (Rectángulo Verde)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila central: 4 rectángulos violetas de tamaño 3 cada uno (col-md-3 col-6) -->
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="purple-box text-center">Violeta 1 (col-3)</div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="purple-box text-center">Violeta 2 (col-3)</div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="purple-box text-center">Violeta 3 (col-3)</div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="purple-box text-center">Violeta 4 (col-3)</div>
+                        </div>
+                    </div>
+
+                    <!-- Fila inferior: 2 rectángulos de tamaño 3 y 1 rectángulo de tamaño 6 (celeste) -->
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <div class="purple-box text-center">Violeta 5 (col-3)</div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="purple-box text-center">Violeta 6 (col-3)</div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="lightblue-box text-center">
+                                <strong>Rectángulo Celeste Inferior Derecho (col-6)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

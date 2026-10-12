@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Práctica 3: Componentes Bootstrap - UTN FRRO</title>
+    <!-- Bootstrap CSS v4.3.1 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Estilo personalizado -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="bg-dark text-white p-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0">Entornos Gráficos - Práctica 3: Componentes</h1>
+            <a href="formulario_contacto.html" class="btn btn-outline-light btn-sm">Ver Formulario de Contacto</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <!-- Sidebar: Tamaño 3, con botón disparador de Modal -->
+            <aside class="col-12 col-md-3 mb-4">
+                <div class="sidebar-box">
+                    <h5 class="mb-3">Panel Lateral</h5>
+                    <p class="small text-muted">Ejercicio 2: Disparador de ventana modal.</p>
+                    
+                    <!-- Botón para abrir el Modal -->
+                    <button type="button" class="btn btn-primary btn-block mb-4" data-toggle="modal" data-target="#miModal">
+                        Abrir Modal
+                    </button>
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active">Dashboard</a>
+                        <a href="#" class="list-group-item list-group-item-action">Configuración</a>
+                        <a href="#" class="list-group-item list-group-item-action">Reportes</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Área Central -->
+            <div class="col-12 col-md-9">
+                <!-- 1) Alerta en el área verde -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+                            <h4 class="alert-heading font-weight-bold">¡Operación exitosa!</h4>
+                            <p class="mb-0">Este es el componente de alerta (alert-success) requerido en el rectángulo superior.</p>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3) Cuatro Componentes Card en los rectángulos violetas -->
+                <div class="row mb-4">
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <div class="card h-100 shadow-sm border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Tarjeta 1</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtítulo 1</h6>
+                                <p class="card-text small">Contenido de la primera card de Bootstrap.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <div class="card h-100 shadow-sm border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Tarjeta 2</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtítulo 2</h6>
+                                <p class="card-text small">Contenido de la segunda card de Bootstrap.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <div class="card h-100 shadow-sm border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Tarjeta 3</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtítulo 3</h6>
+                                <p class="card-text small">Contenido de la tercera card de Bootstrap.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mb-3">
+                        <div class="card h-100 shadow-sm border-primary">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Tarjeta 4</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subtítulo 4</h6>
+                                <p class="card-text small">Contenido de la cuarta card de Bootstrap.</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila inferior: 2 tarjetas adicionales y 1 Slider de 3 imágenes (tamaño 6) -->
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <div class="card h-100 shadow-sm border-secondary">
+                            <div class="card-body">
+                                <h5 class="card-title">Módulo A</h5>
+                                <p class="card-text small">Rectángulo central complementario.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-3">
+                        <div class="card h-100 shadow-sm border-secondary">
+                            <div class="card-body">
+                                <h5 class="card-title">Módulo B</h5>
+                                <p class="card-text small">Rectángulo central complementario.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4) Slider Carousel con 3 imágenes en el rectángulo celeste inferior derecho (tamaño 6) -->
+                    <div class="col-12 col-md-6 mb-3">
+                        <div id="carruselEjemplo" class="carousel slide shadow-sm rounded overflow-hidden" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carruselEjemplo" data-slide-to="0" class="active"></li>
+                                <li data-target="#carruselEjemplo" data-slide-to="1"></li>
+                                <li data-target="#carruselEjemplo" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <svg class="d-block w-100" width="100%" height="220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                        <rect width="100%" height="100%" fill="#17a2b8"></rect>
+                                        <text x="50%" y="50%" fill="#ffffff" dy=".3em" text-anchor="middle" font-size="20" font-family="sans-serif">Slide 1: UTN FRRO</text>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Primera Imagen</h5>
+                                        <p class="small">Infraestructura y Redes.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg class="d-block w-100" width="100%" height="220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                        <rect width="100%" height="100%" fill="#138496"></rect>
+                                        <text x="50%" y="50%" fill="#ffffff" dy=".3em" text-anchor="middle" font-size="20" font-family="sans-serif">Slide 2: Entornos Gráficos</text>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Segunda Imagen</h5>
+                                        <p class="small">Diseño Centrado en el Usuario.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg class="d-block w-100" width="100%" height="220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                        <rect width="100%" height="100%" fill="#117a8b"></rect>
+                                        <text x="50%" y="50%" fill="#ffffff" dy=".3em" text-anchor="middle" font-size="20" font-family="sans-serif">Slide 3: Desarrollo Web</text>
+                                    </svg>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Tercera Imagen</h5>
+                                        <p class="small">Integración PHP & Bootstrap.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carruselEjemplo" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carruselEjemplo" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal (Ejercicio 2) con botones Cerrar y Guardar Cambios -->
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Ventana Modal de Configuración</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Este es el modal interactivo solicitado para el sidebar. Cuenta con los dos botones reglamentarios en el pie.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="alert('¡Cambios guardados exitosamente!'); $('#miModal').modal('hide');">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
