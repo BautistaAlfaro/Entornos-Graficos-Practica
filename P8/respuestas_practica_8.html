@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTN FRRO - Práctica 8: Accesibilidad y Usabilidad Web</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 950px; margin: 40px auto; padding: 0 20px; background: #f8f9fa; }
+        .content { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        h2 { color: #333; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+        h3 { color: #0056b3; margin-top: 25px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #dee2e6; padding: 12px; text-align: left; vertical-align: top; }
+        th { background: #e9ecef; }
+        .badge-u { background: #007bff; color: white; padding: 3px 8px; border-radius: 3px; font-weight: bold; }
+        .badge-a { background: #28a745; color: white; padding: 3px 8px; border-radius: 3px; font-weight: bold; }
+        .meta { color: #666; font-size: 0.9em; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>Práctica N° 8: Accesibilidad y Usabilidad Web</h1>
+    <div class="meta"><strong>Cátedra:</strong> Entornos Gráficos — UTN FRRO | <strong>Docentes:</strong> Prof. Ing. Daniela Díaz / Prof. Ing. Julián Butti</div>
+
+    <h2>1. Cuestionario Teórico</h2>
+    <h3>1. ¿Qué es la Accesibilidad Web?</h3>
+    <p>Es la posibilidad técnica y de diseño de que todas las personas puedan percibir, comprender, navegar e interactuar con la Web de manera autónoma, independientemente de sus capacidades sensoriales, físicas, cognitivas o tecnologías de asistencia empleadas.</p>
+
+    <h3>2. ¿Qué es la WAI?</h3>
+    <p>La <strong>Web Accessibility Initiative</strong> es la rama especializada del consorcio internacional W3C dedicada a desarrollar estándares, pautas y especificaciones técnicas para garantizar la accesibilidad universal de la Web.</p>
+
+    <h3>3. Componentes esenciales de Accesibilidad Web</h3>
+    <p>Son 7 componentes interrelacionados: Contenido, Navegadores/Reproductores, Tecnologías de Asistencia (lectores de pantalla, líneas braille), Usuarios, Desarrolladores/Diseñadores, Herramientas de Autor (ATAG) y Herramientas de Evaluación (TAW, WAVE).</p>
+
+    <h3>4. Pautas de Accesibilidad para el Contenido Web (WCAG 2.0)</h3>
+    <p>Estándar técnico internacional estructurado en 4 principios (POUR): <strong>Perceptible</strong>, <strong>Operable</strong>, <strong>Comprensible</strong> y <strong>Robusto</strong>.</p>
+
+    <h3>5. Niveles de Prioridad</h3>
+    <ul>
+        <li><strong>Prioridad 1:</strong> El desarrollador <em>tiene que</em> satisfacerlo (su omisión impide el acceso a grupos enteros).</li>
+        <li><strong>Prioridad 2:</strong> El desarrollador <em>debe</em> satisfacerlo (su omisión dificulta seriamente el acceso).</li>
+        <li><strong>Prioridad 3:</strong> El desarrollador <em>puede</em> satisfacerlo (mejora la facilidad de acceso).</li>
+    </ul>
+
+    <h3>6. Niveles de Conformidad</h3>
+    <p><strong>Nivel A</strong> (mínimo legal en Argentina bajo Ley 26.653 y ONTI), <strong>Nivel AA</strong> (estándar internacional recomendado) y <strong>Nivel AAA</strong> (máximo nivel de accesibilidad).</p>
+
+    <h3>7. ¿Qué es TAW?</h3>
+    <p>El <strong>Test de Accesibilidad Web</strong> es una herramienta automática y semiautomática desarrollada por la Fundación CTIC para auditar sitios web contrastándolos contra las pautas WCAG del W3C.</p>
+
+    <h3>8. ¿En qué consiste la Usabilidad Web?</h3>
+    <p>Es la medida de eficacia, eficiencia y satisfacción con la que usuarios específicos pueden alcanzar metas determinadas en una interfaz web.</p>
+
+    <h3>9. Buscabilidad y Visibilidad</h3>
+    <p>La <strong>visibilidad</strong> refiere a ser encontrado desde el exterior (SEO, backlinks). La <strong>buscabilidad (findability)</strong> es la facilidad para localizar información específica una vez dentro del sitio.</p>
+
+    <h3>10. Fidelidad de un sitio web</h3>
+    <p>Capacidad del sitio para generar confianza, retención y visitas recurrentes por parte de los usuarios.</p>
+
+    <h3>11. Técnicas de evaluación de usabilidad</h3>
+    <p>Evaluación heurística (Nielsen), pruebas con usuarios (User Testing), protocolo de pensamiento en voz alta (Think Aloud), mapas de calor (Heatmaps) y Card Sorting.</p>
+
+    <h3>12. Independencia de Dispositivos (DIP)</h3>
+    <p>Acceso equivalente a los contenidos desde cualquier dispositivo (desktop, móvil, tablet) mediante diseño web responsivo sin demandar tecnologías propietarias.</p>
+
+    <h3>13. Internacionalización (i18n) vs Localización (l10n)</h3>
+    <p><strong>i18n:</strong> Ingeniería previa del sistema para admitir cualquier idioma y cultura sin cambiar código (UTF-8, textos externalizados, layout adaptable).<br>
+    <strong>l10n:</strong> Adaptación particular a un país o región específica (traducción, moneda, formatos).</p>
+
+    <h2>2. Clasificación del Checklist (Usabilidad vs Accesibilidad)</h2>
+    <table>
+        <thead>
+            <tr><th>Pregunta / Criterio</th><th>Tipo</th><th>Justificación</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>¿Cumple el sitio con sus objetivos?</td><td><span class="badge-u">Usabilidad</span></td><td>Efectividad de la arquitectura de información.</td></tr>
+            <tr><td>¿Es eficiente e intuitivo?</td><td><span class="badge-u">Usabilidad</span></td><td>Facilidad de aprendizaje y rapidez de interacción.</td></tr>
+            <tr><td>¿Mantiene consistencia en apariencia y funcionamiento?</td><td><span class="badge-u">Usabilidad</span></td><td>Heurística de consistencia y estándares.</td></tr>
+            <tr><td>¿Los enlaces que son imágenes tienen su atributo ALT?</td><td><span class="badge-a">Accesibilidad</span></td><td>Criterio WCAG 1.1.1 (Nivel A): Texto alternativo para lectores de pantalla.</td></tr>
+            <tr><td>¿Si usa JS en navegación preparó modo texto?</td><td><span class="badge-a">Accesibilidad</span></td><td>Degradado elegante e independencia tecnológica.</td></tr>
+            <tr><td>¿Existen enlaces rotos?</td><td><span class="badge-u">Usabilidad</span></td><td>Calidad y frustración del usuario en la navegación.</td></tr>
+            <tr><td>¿Tiene migas de pan (breadcrumbs)?</td><td><span class="badge-u">Usabilidad</span></td><td>Ubicación contextual dentro de la jerarquía.</td></tr>
+            <tr><td>Evite animaciones cíclicas y flash innecesario</td><td><span class="badge-a">Accesibilidad</span></td><td>Criterio WCAG 2.2.2/2.3.1: Previene distracciones severas y convulsiones fotosensibles.</td></tr>
+            <tr><td>¿La tecnología es compatible sin plug-ins?</td><td><span class="badge-a">Accesibilidad</span></td><td>Principio de Robustez e inclusión tecnológica.</td></tr>
+            <tr><td>¿Se previeron respuestas del sistema (feedback)?</td><td><span class="badge-u">Usabilidad</span></td><td>Visibilidad del estado del sistema.</td></tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
