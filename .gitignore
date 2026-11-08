@@ -10,8 +10,8 @@ Thumbs.db
 # PHP runtime / uploads / temporary files
 *.log
 
-# Markdown files
-*.md
-
 # TPI (repositorio separado)
 TPI/
+
+# Material bibliografico general
+archivos/
